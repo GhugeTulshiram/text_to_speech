@@ -1,6 +1,6 @@
 🤟 Sign Language to Text and Speech Conversion System
 
-📌 Project Description
+📌 Project Descriptio
 
 The Sign Language to Text and Speech Conversion System is a full-stack web application designed to help improve communication using sign language.
 
