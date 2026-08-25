@@ -1,0 +1,128 @@
+.profile-wrapper {
+  min-height: 100vh;
+  background: #80cae8;
+background: linear-gradient(90deg, rgba(128, 202, 232, 1) 0%, rgba(105, 162, 235, 1) 51%, rgba(83, 98, 237, 1) 100%);
+  padding: 60px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-btn {
+  margin-left: auto;
+  background: #4f7cff;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.profile-form {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.save-btn {
+  grid-column: span 2;
+  margin-top: 20px;
+  background: #4f7cff;
+  color: white;
+  padding: 14px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Progress Bar */
+.profile-progress {
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  transition: width 0.5s ease;
+}
+
+/* Danger Zone */
+.danger-zone {
+  margin-top: 40px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}

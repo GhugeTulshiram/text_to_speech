@@ -1,0 +1,277 @@
+/* =========================
+   PAGE
+========================= */
+.stt-page {
+  min-height: 100vh;
+  background: #80cae8;
+background: linear-gradient(90deg, rgba(128, 202, 232, 1) 0%, rgba(105, 162, 235, 1) 51%, rgba(83, 98, 237, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* =========================
+   MAIN WRAPPER
+========================= */
+.stt-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  border-radius: 28px;
+  padding: 60px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.stt-wrapper h1 {
+  font-size: 42px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   MAIN GRID
+========================= */
+.stt-main {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+/* =========================
+   LEFT – DETECTED SIGN
+========================= */
+.detected-card {
+  flex: 1;
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.detected-card h3 {
+  margin-bottom: 20px;
+}
+
+.detected-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+/* =========================
+   RIGHT – CAMERA
+========================= */
+.camera-card {
+  flex: 1;
+  background: linear-gradient(135deg, #ffffff, #eef2ff);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.primary-btn,
+.secondary-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+}
+
+.secondary-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.primary-btn:hover {
+  opacity: 0.95;
+}
+
+.secondary-btn:hover {
+  background: #d1d5db;
+}
+
+.camera-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.camera-note {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* =========================
+   WATCH & LEARN
+========================= */
+.watch-section {
+  padding: 90px 8%;
+  background: #f9fbff;
+}
+
+.watch-section h2 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.watch-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Horizontal scroll */
+.video-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.video-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.video-scroll::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+.video-card {
+  min-width: 300px;
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  scroll-snap-align: start;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  border: none;
+}
+
+.video-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* =========================
+   ABOUT US
+========================= */
+.about-full {
+  width: 100%;
+  background: linear-gradient(135deg, #eef4ff, #ffffff);
+  padding: 100px 0;
+}
+
+.about-wrapper {
+  padding: 0 8%;
+  text-align: center;
+}
+
+.about-wrapper h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* ABOUT BOXES */
+.about-row {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  flex: 1;
+  min-width: 260px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.about-box:hover {
+  transform: translateY(-8px);
+}
+
+.about-box h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   STATS
+========================= */
+.about-stats {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-stats div {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.about-stats h4 {
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+.about-stats span {
+  color: #6b7280;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .stt-main {
+    flex-direction: column;
+  }
+
+  .stt-wrapper {
+    padding: 40px;
+  }
+}
